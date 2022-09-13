@@ -9,10 +9,12 @@ backjoon 11399 - ATM  https://www.acmicpc.net/problem/11399
 using namespace std;
 
 int main(){
+    
     int n=0; // n = 사람수
     scanf("%d",&n); // 사람수 입력받기
 
-    int* arr = new int(n);
+    // int* arr = new int(n);
+    int arr[1000]; //max n = 1000
 
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]); //걸리는 시간 입력받기
