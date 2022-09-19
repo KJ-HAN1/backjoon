@@ -17,14 +17,16 @@ int main(){
     int a[50],b[50];    //배열
 
     cin >> n;
-    for(int i=0; i<n; i++){ //n길이만큼의 배열입력
+    for(int i=0; i<n; i++){ //n길이만큼의 a배열입력
         cin >> a[i];
     }
-    for(int i=0; i<n; i++){ //n길이만큼의 배열입력
+    for(int i=0; i<n; i++){ //n길이만큼의 b배열입력
         cin >> b[i];
     }
+
     sort(a,a+n);        //a,b 오름차순, 내림차순 정렬
     sort(b,b+n,desc);
+
     int sum = 0;
     for(int i=0; i<n; i++){
         sum += a[i] * b[i];
