@@ -1,24 +1,18 @@
 #include<iostream>
-
+#include<string>
 using namespace std;
 
 int main(){
+    string a;
+    cin >> a;
+    cout << a << endl;
 
-    int a,b;
-    int n = 3;
-    pair<int,int> parry[10]; // pair array
+    string n;
+    cin >> n;
 
-    for(int i=0; i <n; i++){
-        cin >> a >> b;
-        parry[i].first = a;
-        parry[i].second = b;
+    for(int i=0; i<3;i++){
+        a += n[i];
     }
-
-    for(int j = 0; j < n; j++){
-        cout << "parry" << j << " = " << parry[j].first <<" " << parry[j].second <<endl;
-    }
-    
-
-    
+    cout << a << endl << "xxxxx";
     return 0;
 }
