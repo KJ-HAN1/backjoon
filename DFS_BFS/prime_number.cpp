@@ -23,7 +23,7 @@ void DFS(int number, int location){  //DFS
         return;
     }
     for(int i=1;i<10;i++){
-        if( 1%2 ==0){
+        if( i%2 ==0){
             continue;
         }
         if(isPrime(number*10 + i)){
