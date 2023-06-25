@@ -1,18 +1,24 @@
-// Case #1: 2
-#include<iostream>
+#include <iostream>
+
 using namespace std;
 
 int main(){
+    float max = -1;
     int N;
     cin >> N;
-    int arr[98765];
+    float M[N];
+    float sum=0;
+
     for(int i=0;i<N;i++){
-        int a,b;
-        cin >> a >> b;
-        arr[i] = a+b;
+        cin >> M[i];
+        if(M[i] > max){
+            max = M[i];
+        }
     }
-    for(int i=1;i<=N;i++){
-        cout << "Case #"<<i<<": "<<arr[i-1] << endl;
+
+    for(int i=0;i<N;i++){       
+        sum += M[i]/max*100;
     }
+    cout << sum/N;
     return 0;
 }

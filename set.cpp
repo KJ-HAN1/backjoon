@@ -1,24 +1,47 @@
 #include <iostream>
-#include <set>
+#include <vector>
+#include <queue>
+#include <algorithm>
 
+#define MAX 300001
 using namespace std;
 
-int main(){
+int N; // 보석 수
+int K; // 가방수
 
-    int arr[10];
-    int N;
-    set<int> s;
-    for(int i=0; i<10; i++){
-        cin >> N;
-        arr[i] = N%42;
+
+pair<int, int> v_jewerly[MAX];
+int v_bag[MAX];
+priority_queue<int, vector<int>, less<int>> pq;
+
+
+long long solve() {
+    sort(v_jewerly, v_jewerly+N);
+    sort(v_bag, v_bag+K);
+
+    int idx = 0;
+    long long sum = 0;
+
+    for (int i = 0; i < K; i++) {
+        while (idx < N && v_bag[i] >= v_jewerly[idx].first) {
+            pq.push(v_jewerly[idx].second);
+            idx++;
+        }
+        if (!pq.empty()) {
+            sum += pq.top();
+            pq.pop();
+        }
     }
-    
-    for(int i=0; i<10; i++){
-        s.insert(arr[i]);
+    return sum;
+}
+
+int main() {
+    cin >> N >> K;
+    for (int i = 0; i < N; ++i) {
+        cin >> v_jewerly[i].first >> v_jewerly[i].second;
     }
-    // set<int>::iterator iter=s.begin();
-	// for(iter;iter!=s.end();iter++)
-	// 	cout<<*iter<<endl;
-    cout << s.size();
-    return 0;
+    for (int i = 0; i < K; ++i) {
+        cin >> v_bag[i];
+    }
+    cout << solve();
 }
