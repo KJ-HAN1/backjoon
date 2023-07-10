@@ -28,7 +28,7 @@ void dfs(int cnt){
             visited[i] = true;
             v[cnt] = i;
             dfs(cnt+1);
-            //visited[i] = false;
+            visited[i] = false;
         }
     }
 }
