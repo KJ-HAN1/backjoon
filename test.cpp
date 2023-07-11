@@ -1,24 +1,22 @@
-#include <iostream>
-
+#include<iostream>
+#include<map>
+#include<string>
 using namespace std;
 
 int main(){
-    float max = -1;
+
+    map<int, int> m1;
     int N;
     cin >> N;
-    float M[N];
-    float sum=0;
 
     for(int i=0;i<N;i++){
-        cin >> M[i];
-        if(M[i] > max){
-            max = M[i];
-        }
+        int a;
+        int s;
+        cin >> s >> a;
+        m1[s] = a;
     }
-
-    for(int i=0;i<N;i++){       
-        sum += M[i]/max*100;
+    for(int i=0;i<N;i++){
+        cout << m1[i]<< endl;
     }
-    cout << sum/N;
     return 0;
 }
