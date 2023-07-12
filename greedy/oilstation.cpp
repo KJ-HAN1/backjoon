@@ -3,7 +3,7 @@
 KukJin
 backjoon 13305 주유소 https://www.acmicpc.net/problem/13305
 */
-=======
+/*
 2023_05_05
 backjoon 13305 - 주유소  https://www.acmicpc.net/problem/13305
 */
@@ -42,4 +42,4 @@ int main(){
 
     return 0;
 }
->>>>>>> 2fb4681af9f357c16323f1d4c03ce37e6329a6fe
+
