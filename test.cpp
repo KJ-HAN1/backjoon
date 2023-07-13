@@ -5,18 +5,14 @@ using namespace std;
 
 int main(){
 
-    map<int, int> m1;
-    int N;
-    cin >> N;
-
-    for(int i=0;i<N;i++){
-        int a;
-        int s;
-        cin >> s >> a;
-        m1[s] = a;
+    int n=123;
+    int sum =0;
+    while(true){
+        sum += n%10;
+        n = n/10;
+        if(n == 0) break;
+        cout << sum<<endl;
     }
-    for(int i=0;i<N;i++){
-        cout << m1[i]<< endl;
-    }
+    // cout << n/10;
     return 0;
 }
