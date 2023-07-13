@@ -1,4 +1,9 @@
 /*
+<<<<<<< HEAD
+KukJin
+backjoon 13305 주유소 https://www.acmicpc.net/problem/13305
+*/
+/*
 2023_05_05
 backjoon 13305 - 주유소  https://www.acmicpc.net/problem/13305
 */
@@ -37,3 +42,4 @@ int main(){
 
     return 0;
 }
+

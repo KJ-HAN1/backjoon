@@ -4,6 +4,9 @@
         "vector": "cpp",
         "utility": "cpp",
         "string": "cpp",
+<<<<<<< HEAD
+        "xiosbase": "cpp"
+=======
         "xiosbase": "cpp",
         "ostream": "cpp",
         "algorithm": "cpp",
@@ -47,5 +50,6 @@
     },
     "files.exclude": {
         "**/*.exe": true
+>>>>>>> 2fb4681af9f357c16323f1d4c03ce37e6329a6fe
     }
 }
