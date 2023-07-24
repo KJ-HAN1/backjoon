@@ -1,3 +1,7 @@
+/*
+2023_07_24
+backjoon 1456_ 거의소수 https://www.acmicpc.net/problem/1456
+*/
 #include<iostream>
 #include<cmath>
 #define MAX 10000001

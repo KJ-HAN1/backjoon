@@ -1,3 +1,7 @@
+/*
+2023_07_11
+backjoon 1744 - 수묶기  https://www.acmicpc.net/problem/1744
+*/
 #include<iostream>
 #include<vector>
 #include<algorithm>

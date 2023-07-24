@@ -1,3 +1,7 @@
+/*
+2022_07_14
+backjoon 11000 - 강의실 배정  https://www.acmicpc.net/problem/11000
+*/
 #include <iostream>
 #include <algorithm>
 #include <utility>
