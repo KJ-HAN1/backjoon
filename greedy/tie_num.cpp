@@ -13,7 +13,7 @@ int main(){
     cin >> N;
     vector<int> plus;
     vector<int> minus;
-
+    
     // 음수와 양수를 각 다른 배열에 저장
     for(int i=0;i<N;i++){
         int a;
